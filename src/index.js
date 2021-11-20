@@ -1,12 +1,30 @@
+import './index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+
 import App from './App';
+import { EmployeeAction } from './components';
 import reportWebVitals from './reportWebVitals';
+
+const RootApp = () => {
+  return <Router>
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/employee/:id" component={EmployeeAction} />
+    </Switch>
+  </Router>
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RootApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

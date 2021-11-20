@@ -1,0 +1,27 @@
+.loader {
+  width: 35px;
+  height: 35px;
+  border-top: 2px solid #5c12ef;
+  border-bottom: 2px solid #5c12ef;
+  border-radius: 50%;
+  animation: spin infinite 1s linear;
+}
+
+.loader-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:fit-content;
+  position: relative;
+  top:50%;
+  left:50%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

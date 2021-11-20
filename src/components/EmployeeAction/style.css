@@ -1,0 +1,16 @@
+.btn{
+    height:30px;
+    BORDER: 0PX;
+    margin : 10px;
+    padding: 5px;   
+}
+
+.success{
+    background : rgb(0, 85, 0);
+    color: white;
+}
+
+.reject{
+    background : rgb(200, 0, 0);
+    color: white;
+}
